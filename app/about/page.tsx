@@ -27,7 +27,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="flex  justify-center py-16 gap-12 border-b-[1px] border-[#DDDDDD] md:flex-row flex-col w-[80%] m:w-full md:pt-0 pt-5">
+      <div className="flex  justify-center py-16 gap-12 border-b-[1px] border-[#DDDDDD] md:flex-row flex-col  m:w-full pt-5 md:pt-16 md:px-10 px-0">
         {aboutData.map((item, id) => (
           <div
             key={id}
