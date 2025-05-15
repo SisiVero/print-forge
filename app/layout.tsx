@@ -7,7 +7,7 @@ import mobileLogo from "@/public/svg/mobileLogo.svg";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export const albert = Albert_Sans({
+export const albertFont = Albert_Sans({
   subsets: ["latin"],
   display: "swap",
 });
@@ -31,7 +31,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${albert.className} ${monst.variable}`}>
+      <body className={`${albertFont.className} ${monst.variable}`}>
         <header>
           <nav className="flex justify-between w-full items-center py-7 text-[#606060] px-10 mb-10">
             <Link href="/" className="hidden md:block">
