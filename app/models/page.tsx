@@ -4,7 +4,7 @@ import { modelData } from "../data";
 
 export default function Models() {
   return (
-    <section className="text-[#1E1E1E] grid md:grid-cols-4 md:gap-8 md:px-10 mb-10 grid-cols-1 w-full px-2 h-full gap-5">
+    <section className="text-[#1E1E1E] grid md:grid-cols-3 md:gap-8 md:px-10 mb-10 grid-cols-1 w-full px-2 h-full gap-5">
       {modelData.map((models, id) => (
         <div
           className="md:w-[300px] md:h-fit rounded-[10px] border border-[#D1D1D1] transition-shadow duration-200 md:hover:shadow-[0_1px_4px_-1px_#1E1E1E]"
