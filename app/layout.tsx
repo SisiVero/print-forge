@@ -7,11 +7,11 @@ import mobileLogo from "@/public/svg/mobileLogo.svg";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export const albertFont = Albert_Sans({
+ const albertFont = Albert_Sans({
   subsets: ["latin"],
   display: "swap",
 });
-export const monst = Montserrat_Alternates({
+ const monst = Montserrat_Alternates({
   subsets: ["latin"],
   variable: "--font-monst",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],

@@ -8,7 +8,7 @@ export default function Models() {
       {modelData.map((models, id) => (
         <div
           className="md:w-[300px] md:h-fit rounded-[10px] border border-[#D1D1D1] transition-shadow duration-200 md:hover:shadow-[0_1px_4px_-1px_#1E1E1E]"
-          key={models.id}
+          key={id}
         >
           <div className="relative w-full md:w-[300px] md:h-[300px]">
             <Image
