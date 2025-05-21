@@ -6,12 +6,13 @@ import logo from "@/public/svg/logo.svg";
 import mobileLogo from "@/public/svg/mobileLogo.svg";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Head from "next/head";
 
- const albertFont = Albert_Sans({
+const albertFont = Albert_Sans({
   subsets: ["latin"],
   display: "swap",
 });
- const monst = Montserrat_Alternates({
+const monst = Montserrat_Alternates({
   subsets: ["latin"],
   variable: "--font-monst",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -31,6 +32,10 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <Head>
+        <title>PrintForge</title>
+         <meta name="printForge" content="Explore stunning 3D models" />
+      </Head>
       <body className={`${albertFont.className} ${monst.variable}`}>
         <header>
           <nav className="flex justify-between w-full items-center py-7 text-[#606060] px-10 mb-10">
@@ -55,7 +60,7 @@ export default function RootLayout({
                       pathname === link.href
                         ? "text-[#F77429] border-b border-[#F77429] pb-2"
                         : "text-gray-400 hover:text-[#F77429]"
-                    } ${link.name === "Home" ? "hidden md:flex": ""}`}
+                    } ${link.name === "Home" ? "hidden md:flex" : ""}`}
                   >
                     {link.name}
                   </Link>
